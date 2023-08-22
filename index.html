@@ -56,6 +56,12 @@
           </ul>
         </address>
       </div>
+
+      <button type="button" class="js-open-menu">
+        <svg width="32" height="22" class="menu-hamburger-mobile">
+          <use href="./images/icons.svg#icon-menu-hamburger"></use>
+        </svg>
+      </button>
     </header>
 
     <main class="main">
@@ -147,6 +153,10 @@
             <li class="about__item">
               <img
                 class="about__image"
+                srcset="
+                  ./images/webstudio/picture-1.jpg    1x,
+                  ./images/webstudio/picture-1@2x.jpg 2x
+                "
                 src="./images/webstudio/picture-1.jpg"
                 alt="Desktop"
                 width="360"
@@ -156,6 +166,10 @@
             <li class="about__item">
               <img
                 class="about__image"
+                srcset="
+                  ./images/webstudio/picture-2.jpg    1x,
+                  ./images/webstudio/picture-2@2x.jpg 2x
+                "
                 src="./images/webstudio/picture-2.jpg"
                 alt="Mobile screens"
                 width="360"
@@ -165,6 +179,10 @@
             <li class="about__item">
               <img
                 class="about__image"
+                srcset="
+                  ./images/webstudio/picture-3.jpg    1x,
+                  ./images/webstudio/picture-3@2x.jpg 2x
+                "
                 src="./images/webstudio/picture-3.jpg"
                 alt="Mobile in hand"
                 width="360"
@@ -184,6 +202,10 @@
             <li class="team__item">
               <img
                 class="team__image"
+                srcset="
+                  ./images/webstudio/employee-mark-guerrero.jpg    1x,
+                  ./images/webstudio/employee-mark-guerrero@2x.jpg 2x
+                "
                 src="./images/webstudio/employee-mark-guerrero.jpg"
                 alt="Employee Mark Guerrero"
                 width="264"
@@ -227,6 +249,10 @@
             <li class="team__item">
               <img
                 class="team__image"
+                srcset="
+                  ./images/webstudio/employee-tom-ford.jpg    1x,
+                  ./images/webstudio/employee-tom-ford@2x.jpg 2x
+                "
                 src="./images/webstudio/employee-tom-ford.jpg"
                 alt="Employee Tom Ford"
                 width="264"
@@ -270,6 +296,10 @@
             <li class="team__item">
               <img
                 class="team__image"
+                srcset="
+                  ./images/webstudio/employee-camila-garcia.jpg    1x,
+                  ./images/webstudio/employee-camila-garcia@2x.jpg 2x
+                "
                 src="./images/webstudio/employee-camila-garcia.jpg"
                 alt="Employee Camila Garcia"
                 width="264"
@@ -313,6 +343,10 @@
             <li class="team__item">
               <img
                 class="team__image"
+                srcset="
+                  ./images/webstudio/employee-daniel-wilson.jpg    1x,
+                  ./images/webstudio/employee-daniel-wilson@2x.jpg 2x
+                "
                 src="./images/webstudio/employee-daniel-wilson.jpg"
                 alt="Employee Daniel Wilson"
                 width="264"
@@ -582,6 +616,112 @@
       </div>
     </div>
 
+    <!-- Modal-mobile -->
+
+    <!-- .backdrop-header-mobile -->
+    <!-- add .is-hidden -->
+    <div class="js-menu-container">
+      <div class="header-mobile">
+        <button type="button" class="js-close-menu">
+          <svg width="8" height="8" class="close-black-mobile">
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+
+        <nav class="header-mobile__nav">
+          <ul class="menu-mobile list">
+            <li class="menu-mobile__item">
+              <a
+                class="menu-mobile__link link current-mobile"
+                href="./index.html"
+              >
+                Studio</a
+              >
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link link" href="./portfolio.html">
+                Portfolio</a
+              >
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link link" href=""> Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-mobile__contacts">
+          <address class="header-mobile__address">
+            <ul class="header-mobile__address__list list">
+              <li class="header-mobile__address__item">
+                <a
+                  class="header-mobile__address__link link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="header-mobile__address__item">
+                <a
+                  class="header-mobile__address__link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="header-mobile__socials">
+            <ul class="header-mobile__socials__list list">
+              <li class="header-mobile__socials__item">
+                <a class="header-mobile__socials__link link" href="">
+                  <svg
+                    width="24"
+                    height="24"
+                    class="header-mobile__socials__icon"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile__socials__item">
+                <a class="header-mobile__socials__link link" href="">
+                  <svg
+                    width="24"
+                    height="24"
+                    class="header-mobile__socials__icon"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile__socials__item">
+                <a class="header-mobile__socials__link link" href="">
+                  <svg
+                    width="24"
+                    height="24"
+                    class="header-mobile__socials__icon"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile__socials__item">
+                <a class="header-mobile__socials__link link" href="">
+                  <svg
+                    width="24"
+                    height="24"
+                    class="header-mobile__socials__icon"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
