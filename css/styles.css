@@ -320,7 +320,10 @@ textarea {
   margin: 0 auto;
 }
 
-@media (max-width: 767px) and (min-resolution: 192dpi) {
+/* @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) */
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2),
+  (max-width: 767px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -340,7 +343,8 @@ textarea {
   }
 }
 
-@media (min-width: 768px) and (min-resolution: 192dpi) {
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image: url(../images/webstudio/hero-bg-tablet@2x.jpg);
   }
@@ -356,7 +360,8 @@ textarea {
   }
 }
 
-@media (min-width: 1158px) and (min-resolution: 192dpi) {
+@media (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
     background-image: url(../images/webstudio/hero-bg-desktop@2x.jpg);
   }
@@ -412,26 +417,6 @@ textarea {
 .hero__button:hover,
 .hero__button:focus {
   background-color: var(--ocean);
-}
-
-@media (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/webstudio/hero-bg.jpg);
-  }
-}
-
-@media (min-width: 1158px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/webstudio/hero-bg.jpg);
-  }
 }
 
 /* Our advantages */
